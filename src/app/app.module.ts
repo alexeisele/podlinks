@@ -7,6 +7,10 @@ import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2';
 
+import { HeaderModule } from './header/header.module';
+import { ContentModule } from './content/content.module';
+import { SidenavModule } from './sidenav/sidenav.module';
+
 export const firebaseConfig = {
   apiKey: "AIzaSyA0vbim_0qphQx66Q8fovBB7J9sSdSvO9U",
   authDomain: "podlinks.firebaseapp.com",
@@ -24,6 +28,9 @@ export const firebaseConfig = {
     FormsModule,
     HttpModule,
     MaterialModule,
+    HeaderModule,
+    ContentModule,
+    SidenavModule,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
